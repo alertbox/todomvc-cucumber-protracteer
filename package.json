@@ -1,6 +1,6 @@
 {
   "name": "todomvc-gherkin-puppeteer",
-  "description": "Minimalistic template project to kick start Gherkin style E2E tests written in Screenplay pattern using CucumberJS + Protractor with Puppeteer.",
+  "description": "Minimalistic template project to kick start Gherkin style E2E tests written in Screenplay pattern using Puppeteer with CucumberJS + Protractor.",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/kosalanuwan/todomvc-gherkin-puppeteer",

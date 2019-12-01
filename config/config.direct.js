@@ -1,11 +1,11 @@
 require('@babel/register');
+const project = require('../package.json');
+const puppeteer = require('puppeteer');
 
 exports = module.exports = {
     config: {
         SELENIUM_PROMISE_MANAGER: false,    // Using native async/await
-        directConnect: false,               // Using Selenium Server
-        blockingProxy: true,                // Experimenting SlowMo
-        highlightDelay: 3000,               // In Milliseconds
+        directConnect: true,                // Bypass Selenium Server
 
         baseUrl: 'http://todomvc.com/examples/vanillajs',
         getPageTimeout: 60000,              // In Milliseconds, Default 5000
@@ -26,12 +26,21 @@ exports = module.exports = {
             tags: ['(@sanity or @fast) and ~@skip', ],
             strict: true,
             dryRun: false,
+
             // compiler: ['js:@babel/register', ],
         },
 
         capabilities: {
             browserName: 'chrome',
-            shardTestFiles: true
+            shardTestFiles: true,
+            chromeOptions: {
+                useAutomationExtension: false,
+                binary: puppeteer.executablePath()
+            },
+            metadata: {
+                app: { name: project.name, version: project.version },
+                platform: { name: 'osx', version: 'Sierra' }
+            },
         },
 
         plugins: [

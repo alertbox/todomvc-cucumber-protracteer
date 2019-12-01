@@ -1,5 +1,6 @@
 require('@babel/register');
 const project = require('../package.json');
+const puppeteer = require('puppeteer');
 
 exports = module.exports = {
     config: {
@@ -25,6 +26,7 @@ exports = module.exports = {
             tags: ['(@sanity or @fast) and ~@skip', ],
             strict: true,
             dryRun: false,
+            
             // compiler: ['js:@babel/register', ],
         },
 
@@ -36,7 +38,8 @@ exports = module.exports = {
             maxInstances: 2,
             chromeOptions: {
                 useAutomationExtension: false,
-                args: ['--headless', '--disable-gpu', '--window-size=1280,1024', ]
+                args: ['--headless', '--disable-gpu', '--window-size=1280,1024', '--no-sandbox', ],
+                binary: puppeteer.executablePath()
             },
             metadata: {
                 app: { name: project.name, version: project.version },

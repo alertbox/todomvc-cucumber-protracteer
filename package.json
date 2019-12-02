@@ -1,9 +1,9 @@
 {
-  "name": "todomvc-gherkin-puppeteer",
+  "name": "todomvc-cucumber-protracteer",
   "description": "Minimalistic template project to kick start Gherkin style E2E tests written in Screenplay pattern using Puppeteer with CucumberJS + Protractor.",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/kosalanuwan/todomvc-gherkin-puppeteer",
+  "repository": "https://github.com/kosalanuwan/todomvc-cucumber-protracteer",
   "keywords": [
     "protractor-cucumber-framework",
     "test-automation",
@@ -24,8 +24,8 @@
   ],
   "author": "Alertbox and the contributors",
   "license": "MIT",
-  "bugs": "https://github.com/kosalanuwan/todomvc-gherkin-puppeteer/issues",
-  "homepage": "https://github.com/kosalanuwan/ttodomvc-gherkin-puppeteer#readme",
+  "bugs": "https://github.com/kosalanuwan/todomvc-cucumber-protracteer/issues",
+  "homepage": "https://github.com/kosalanuwan/ttodomvc-cucumber-protracteer#readme",
   "engines": {
     "node": ">= 10.15",
     "yarn": ">= 1.17"

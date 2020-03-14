@@ -1,5 +1,5 @@
 ---
-layout: site
+layout: null
 hide_hero: true
 ---
 

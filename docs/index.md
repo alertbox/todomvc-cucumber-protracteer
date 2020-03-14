@@ -1,9 +1,14 @@
+---
+layout: page
+hide_hero: true
+---
+
 # Puppeteer with CucumberJS + Protractor - Starter
-###### ES6 / Vanilla Javascript version
+### ES6 / Vanilla Javascript version
 
 Minimalistic template project to kick start Behavior-driven/Gherkin style End-to-End tests automation, written in Screenplay pattern using `puppeteer` with `cucumberjs` + `protractor`.
 
-<a href="http://todomvc.com/examples/vanillajs/">![todomvc](docs/todomvc-play.gif)</a>
+<a href="http://todomvc.com/examples/vanillajs/">![todomvc](todomvc-play.gif)</a>
 
 > **Important!**
 >
